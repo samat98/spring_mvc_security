@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<table>
+    <thead>
+    <tr>
+        <th> id </th>
+        <th> name </th>
+        <th> password </th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><span th:text="${user.id}"> model </span></td>
+            <td><span th:text="${user.username}"> series </span></td>
+        </tr>
+    </tbody>
+
+</table>
+<div th:replace="fragments/logout :: logout"></div>
+</body>
+</html>
